@@ -5,11 +5,11 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 const Navbar = () => {
   return (
     <div className='flex items-center  lg:gap-[368px] gap-[150px]'>
-      <div className='flex gap-[40px] pt-[40px]'>
+      <div className='flex gap-[40px] pt-[40px] items-center justify-center'>
         <div className=' lg:pl-[116px] pl-[16px] '>
-            <Image  src='/assets/credpal-icon.svg' width={90} height={32} alt='credpal icon'/>
+            <Image  src='/assets/credpal-icon.svg' width={139} height={32} alt='credpal icon'/>
         </div>
-        <div className=' hidden lg:flex gap-[40px] '>
+        <div className=' hidden lg:flex gap-[40px]  '>
         <div className='text-[14px] font-[500] text-white'>products</div>
         <div className='text-[14px] font-[500] text-white'>Business</div>
         <div className='text-[14px] font-[500] text-white'>What we do</div>

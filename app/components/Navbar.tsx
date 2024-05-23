@@ -4,7 +4,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = () => {
   return (
-    <div className='flex items-center  lg:justify-between justify-between w-[100%] lg:px-[116px] px-[16px]'>
+    <div className='flex items-center  lg:justify-between justify-between w-[100%] lg:px-[116px] px-[16px] fixed overflow-y-hidden bg-[#006DF7] z-50 top-0 '>
       <div className='flex gap-[40px] pt-[40px] items-center justify-center'>
         <div className='  '>
             <Image  src='/assets/credpal-icon.svg' width={139} height={32} alt='credpal icon'/>

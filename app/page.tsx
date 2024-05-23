@@ -1,5 +1,7 @@
+'use client'
 import Image from "next/image";
 import Hero from "./components/Hero";
+import Testimonials from "./components/Testimonials";
 
 
 export default function Home() {
@@ -7,6 +9,7 @@ export default function Home() {
     <>
      
      <div><Hero/></div>
+     <Testimonials/>
     </>
    
 

@@ -1,6 +1,7 @@
 import React,{useRef} from 'react'
 import { TestimonialDetails } from '../utils/TestimonialDetails'
 import { IoMdStar, IoIosArrowBack, IoIosArrowForward  } from 'react-icons/io';
+import Image from 'next/image'
 
 
 const StarRating = () => (
@@ -42,14 +43,16 @@ const Testimonials:React.FC = () => {
                         <div className="flex-shrink-0 w-80 bg-[#F9FAFB] p-4 rounded-[6px]" key={index}>
                             <div className='flex flex-row gap-[12px]'>
                                 
-                            <img
-                                src={testimonial.image}
-                                alt={`Testimonial from ${testimonial.name}`}
-                                className="w-[21px] h-[21px] rounded-full  mb-4"
-                            />
+                            <Image
+                                    src={testimonial.image}
+                                    alt={`Testimonial from ${testimonial.name}`}
+                                    className="w-[21px] h-[21px] rounded-full mb-4"
+                                    width={21}
+                                    height={21}
+                                />
                             <h3 className="text-[14px] font-semibold text-gray-800 mb-2">{testimonial.name}</h3>
                             </div>
-                            <p className="text-gray-700 mb-4">"{testimonial.content}"</p>
+                            <p className="text-gray-700 mb-4">{testimonial.content}</p>
                             <StarRating />
                         </div>
                     ))}
